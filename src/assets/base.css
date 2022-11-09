@@ -1,0 +1,77 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --todo-c-white: #ffffff;
+  --todo-c-white-soft: #f8f8f8;
+  --todo-c-white-mute: #f2f2f2;
+
+  --todo-c-black: #181818;
+  --todo-c-black-soft: #222222;
+  --todo-c-black-mute: #282828;
+
+  --todo-c-indigo: #2c3e50;
+
+  --todo-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --todo-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --todo-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --todo-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --todo-c-text-light-1: var(--todo-c-indigo);
+  --todo-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --todo-c-text-dark-1: var(--todo-c-white);
+  --todo-c-text-dark-2: rgb(174, 174, 174);
+
+  --form-control-color: rgb(197, 61, 209);
+  --form-control-disabled: #959495;
+}
+
+/* semantic color variables for this project */
+/* :root {
+  --color-background: var(--todo-c-white);
+  --color-background-soft: var(--todo-c-white-soft);
+  --color-background-mute: var(--todo-c-white-mute);
+
+  --color-border: var(--todo-c-divider-light-2);
+  --color-border-hover: var(--todo-c-divider-light-1);
+
+  --color-heading: var(--todo-c-text-light-1);
+  --color-text: var(--todo-c-text-light-1);
+
+  --section-gap: 160px;
+} */
+
+/* @media (prefers-color-scheme: dark) { */
+:root {
+  --color-background: var(--todo-c-black);
+  --color-background-soft: var(--todo-c-black-soft);
+  --color-background-mute: var(--todo-c-black-mute);
+
+  --color-border: var(--todo-c-divider-dark-2);
+  --color-border-hover: var(--todo-c-divider-dark-1);
+
+  --color-heading: var(--todo-c-text-dark-1);
+  --color-text: var(--todo-c-text-dark-2);
+}
+/* } */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
